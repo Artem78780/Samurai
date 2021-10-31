@@ -7,10 +7,14 @@
 
 .item {
     font-size: 20px;
-    color: white;
+    color: black;
     margin: 5px;
-    padding: 5px;
+    padding: 10px;
     cursor: pointer;
+    
+}
+.item a{
+    text-decoration: none;
 }
 
 .active {
