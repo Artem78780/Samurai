@@ -1,26 +1,33 @@
-.dialogs{
+.dialogs {
     display: grid;
     grid-template-columns: 2fr 10fr;
 }
-.dialogItem{
+
+.dialogItem {
     font-size: 18px;
 }
-.dialog{
+
+.dialog {
     margin: 5px;
     padding: 10px 15px;
     cursor: pointer;
     text-decoration: none;
 }
-.dialog a{
-    text-decoration:  none;
+
+.dialog a {
+    text-decoration: none;
+    color: white;
 }
-.active{
-    color: rgb(0, 255, 128);
+
+.active {
+    color: rgb(255, 255, 255);
 }
-.messages{
+
+.messages {
     font-size: 18px;
 }
-.messageItem{
+
+.messageItem {
     margin: 5px;
     padding: 10px 15px;
     cursor: pointer;
