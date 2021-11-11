@@ -16,7 +16,8 @@ const MyPosts = (props) => {
     }
     let onPostChange = ()=>{
       let text = newPostElement.current.value;
-      props.dispatch ({type: 'UPDATE-NEW-POST-TEXT', text: text});
+      let action = {type: 'UPDATE-NEW-POST-TEXT', newText: text}
+      props.dispatch (action);
     }
   
   return ( 
@@ -31,7 +32,7 @@ const MyPosts = (props) => {
           /> 
         </div>   
         <div>
-          <button onClick = { addPost } >Добавить пост</button>
+          <button onClick = { addPost }>Добавить пост</button>
         </div>
       </div>
       <div className={s.posts}>
