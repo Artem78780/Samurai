@@ -6,8 +6,8 @@ import Dialogs from './components/Dialogs/Dialogs';
 import { Route } from 'react-router';
 import { BrowserRouter } from 'react-router-dom';
 
-const App = (props) => { 
-    
+const App = (props) => {
+
 
     return (
         < BrowserRouter >
@@ -15,12 +15,14 @@ const App = (props) => {
                 < Header />
                 < Navbar />
                 <div className='appWrapperContent' >
-                    <Route path='/dialogs' render={ () => 
-                    < Dialogs state = {props.state.dialogsPage}/> }/>      
-                    <Route path='/profile' render={ () => 
-                    < Profile  state={ props.state.profilePage } 
-                    addPost={ props.addPost } />}/>
-                        
+                    <Route path='/dialogs' render={() =>
+                        < Dialogs state={props.state.dialogsPage} />} />
+                    <Route path='/profile' render={() =>
+                        < Profile
+                            state={props.state.profilePage}
+                            dispatch={props.dispatch}
+                        />
+                    }/>    
                 </div>
             </div>
         </BrowserRouter>
